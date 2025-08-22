@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip | Kerala Tourism</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <style>
+        /* Trip Planning Form Styling */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2e7d32; /* Kerala green theme */
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #2e7d32;
+    outline: none;
+    box-shadow: 0px 0px 6px rgba(46, 125, 50, 0.4);
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #1b5e20;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Kerala Tourism Logo">
+            <a href="home.html"></a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Where_to_go.html">Where to Go</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="plan_your_trip.html" class="active">Plan Your Trip</a></li>
+            <li><a href="wedding.html">Destination Wedding</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero" style="background: url('assets/plan-trip-banner.jpg') no-repeat center center/cover;">
+        <h1>Plan Your Kerala Trip</h1>
+        <p>Customize your journey to God’s Own Country with our trip planning tool.</p>
+    </header>
+
+    <!-- Trip Planner Form -->
+    <section class="trip-planner">
+        <h2>Create Your Travel Plan</h2>
+        <form>
+            <label for="destination">Choose Destination:</label>
+            <select id="destination" name="destination">
+                <option value="">--Select--</option>
+                <option>Backwaters</option>
+                <option>Hill Stations</option>
+                <option>Beaches</option>
+                <option>Wildlife Sanctuaries</option>
+                <option>Culture & Heritage</option>
+            </select>
+
+            <label for="date">Travel Dates:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" name="days" min="1">
+
+            <label for="travelers">Number of Travelers:</label>
+            <input type="number" id="travelers" name="travelers" min="1">
+
+            <label for="budget">Budget Range:</label>
+            <select id="budget" name="budget">
+                <option value="">--Select--</option>
+                <option>₹10,000 - ₹20,000</option>
+                <option>₹20,000 - ₹40,000</option>
+                <option>₹40,000 - ₹60,000</option>
+                <option>Above ₹60,000</option>
+            </select>
+
+            <button type="submit">Plan My Trip</button>
+        </form>
+    </section>
+
+    <!-- Suggested Packages -->
+    <section class="packages">
+        <h2>Popular Trip Packages</h2>
+        <div class="dest-grid">
+            <div class="card">
+                <img src="assets/backwaters.jpg" alt="Backwaters">
+                <h3>Backwater Bliss</h3>
+                <p>3 Days | Alleppey & Kumarakom</p>
+                <p>Experience a houseboat stay, canoe rides, and village life.</p>
+            </div>
+            <div class="card">
+                <img src="assets/munnar.jpg" alt="Hill Station">
+                <h3>Munnar Escape</h3>
+                <p>4 Days | Munnar & Thekkady</p>
+                <p>Tea gardens, spice plantations, and wildlife safaris.</p>
+            </div>
+            <div class="card">
+                <img src="assets/beach.jpg" alt="Beach">
+                <h3>Beach Paradise</h3>
+                <p>5 Days | Kovalam & Varkala</p>
+                <p>Relax on golden sands and enjoy stunning sunsets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Kerala Tourism | Designed By Akhil</p>
+        <p>Email: info@keralatourism.org </p>
+    </footer>
+</body>
+</html>
